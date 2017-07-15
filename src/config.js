@@ -42,6 +42,30 @@ export default [
       },
       {
         name: 'Gohan'
+      },
+      {
+        name: 'Vegeta'
+      },
+      {
+        name: 'Piccolo'
+      },
+      {
+        name: 'Roshi'
+      },
+      {
+        name: 'Tien'
+      },
+      {
+        name: 'Krillin'
+      },
+      {
+        name: 'Android 17'
+      },
+      {
+        name: 'Android 18'
+      },
+      {
+        name: 'Freiza'
       }
     ]
   },

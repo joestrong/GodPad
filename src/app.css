@@ -6,6 +6,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: arial, sans-serif;
+    color: #fff;
 }
 main {
     display: flex;
@@ -25,22 +27,89 @@ main {
 }
 ul.universes {
     position: relative;
-    width: 60vmin;
-    height: 60vmin;
-    border: 3vmin solid #3cc184;
+    width: 56vmin;
+    height: 56vmin;
+    border: 5vmin solid #2e878f;
     border-radius: 50%;
     margin: 0;
     padding: 0;
 }
 li.universe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 13vmin;
     height: 13vmin;
     background: #fff;
-    border: 1vmin solid #3cc184;
+    border: 1vmin solid #2e878f;
     border-radius: 50%;
-    text-indent: -32000px;
     cursor: pointer;
+    color: #2e878f;
+    font-size: 5vmin;
+}
+
+.page.single {
+    display: none;
+    /*background: url('/images/background-2.png') no-repeat center center;*/
+    background-size: contain;
+}
+.universe-meta {
+    width: 20vmin;
+    padding: 50px;
+}
+.universe-icon {
+    width: 20vmin;
+    height: 20vmin;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e878f;
+    font-size: 5vmin;
+}
+.universe-name {
+    text-align: center;
+}
+ul.fighters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: start;
+    flex: 1;
+    margin: 0;
+    padding: 10% 30% 0 10%;
+}
+li.fighter {
+    display: block;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+li.fighter .spacer {
+    display: block;
+    padding-top: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+li.fighter.removed .spacer {
+    opacity: 0.8;
+}
+li.fighter .fighter-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #2e878f;
 }
