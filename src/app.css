@@ -50,6 +50,10 @@ li.universe {
     color: #2e878f;
     font-size: 5vmin;
 }
+li.universe:hover {
+    background: #888;
+    color: #fff;
+}
 
 .page.single {
     display: none;
@@ -86,11 +90,12 @@ ul.fighters {
 li.fighter {
     display: block;
     position: relative;
-    background: #fff;
+    background: #fff none;
     border-radius: 50%;
     margin: 10px;
     overflow: hidden;
     cursor: pointer;
+    background-size: cover;
 }
 li.fighter .spacer {
     display: block;
@@ -111,5 +116,10 @@ li.fighter .fighter-name {
     left: 0;
     bottom: 0;
     right: 0;
-    color: #2e878f;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+li.fighter:hover .fighter-name {
+    opacity: 1;
 }
