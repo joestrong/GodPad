@@ -54,8 +54,13 @@ page2El.addEventListener('click', e => {
     return
   }
   const fighterEl = e.target.matches('.fighter') ? e.target : e.target.parentNode
-  fighterEl.classList.add('removed')
-  removeFighter(theUniverseIndex, fighterEl.getAttribute('data-fighter'))
+  if (fighterEl.classList.contains('removed')) {
+    fighterEl.classList.remove('removed')
+    addFighter(theUniverseIndex, fighterEl.getAttribute('data-fighter'))
+  } else {
+    fighterEl.classList.add('removed')
+    removeFighter(theUniverseIndex, fighterEl.getAttribute('data-fighter'))
+  }
 })
 
 function isFighterRemoved(universeIndex, fighterIndex) {
@@ -67,6 +72,11 @@ function isFighterRemoved(universeIndex, fighterIndex) {
 
 function removeFighter(universeIndex, fighterIndex) {
   universes[universeIndex].fighters[fighterIndex].removed = true
+  saveData()
+}
+
+function addFighter(universeIndex, fighterIndex) {
+  universes[universeIndex].fighters[fighterIndex].removed = false
   saveData()
 }
 
