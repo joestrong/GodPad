@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+main {
+    display: flex;
+    flex: 1;
+    background: #4ad5c0;
+}
+.page {
+    display: flex;
+    flex: 1;
+}
+
+.page.first {
+    justify-content: center;
+    align-items: center;
+    background: url('/images/background-1.png') no-repeat center center;
+    background-size: contain;
+}
+ul.universes {
+    position: relative;
+    width: 60vmin;
+    height: 60vmin;
+    border: 3vmin solid #3cc184;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+li.universe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 13vmin;
+    height: 13vmin;
+    background: #fff;
+    border: 1vmin solid #3cc184;
+    border-radius: 50%;
+    text-indent: -32000px;
+    cursor: pointer;
+}

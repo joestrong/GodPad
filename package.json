@@ -1,0 +1,21 @@
+{
+  "name": "godpad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.6",
+    "uglify": "^0.1.5",
+    "watch": "^1.0.2",
+    "webpack": "^3.3.0"
+  },
+  "scripts": {
+    "build": "yarn build:js && yarn build:css",
+    "build:js": "webpack src/app.js ./app.min.js",
+    "build:css": "cleancss src/app.css -o ./app.min.css",
+    "watch": "watch 'yarn build' src"
+  },
+  "dependencies": {
+    "domify": "^1.4.0"
+  }
+}
