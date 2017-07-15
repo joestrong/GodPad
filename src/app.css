@@ -22,7 +22,7 @@ main {
 .page.first {
     justify-content: center;
     align-items: center;
-    background: url('/images/background-1.png') no-repeat center center;
+    background: url('/images/background-1.jpg') no-repeat center center;
     background-size: contain;
 }
 ul.universes {
@@ -57,7 +57,7 @@ li.universe:hover {
 
 .page.single {
     display: none;
-    /*background: url('/images/background-2.png') no-repeat center center;*/
+    /*background: url('/images/background-2.jpg') no-repeat center center;*/
     background-size: contain;
 }
 .universe-meta {

@@ -6,14 +6,16 @@
   "devDependencies": {
     "clean-css-cli": "^4.1.6",
     "node-notifier-cli": "^1.0.1",
+    "sw-precache": "^5.2.0",
     "uglify": "^0.1.5",
     "watch": "^1.0.2",
     "webpack": "^3.3.0"
   },
   "scripts": {
-    "build": "yarn build:js && yarn build:css && yarn notify",
+    "build": "yarn build:js && yarn build:css && yarn build:precache && yarn notify",
     "build:js": "webpack --devtool sourcemaps src/app.js ./app.min.js",
     "build:css": "cleancss src/app.css -o ./app.min.css",
+    "build:precache": "sw-precache --config=./sw-precache-config.js --verbose",
     "watch": "watch 'yarn build' src",
     "notify": "notify -t 'Built' -m 'Built CSS/JS'"
   },

@@ -1,6 +1,8 @@
 import defaultUniverses from './config.js'
 import domify from 'domify'
 
+import './service-worker.js'
+
 let universes = getData()
 
 const page1El = document.querySelector('.page.first')
@@ -38,7 +40,7 @@ function initSingle(universeIndex) {
   for (const [index, fighter] of universe.fighters.entries()) {
     const removed = isFighterRemoved(universeIndex, index) ? 'removed' : ''
     const fighterEl = domify(`
-          <li class="fighter ${removed}" data-fighter="${index}" title="${fighter.name}" style="background-image: url('/images/fighters/${universeIndex+1}-${index+1}.png')">
+          <li class="fighter ${removed}" data-fighter="${index}" title="${fighter.name}" style="background-image: url('/images/fighters/${universeIndex+1}-${index+1}.jpg')">
             <span class="spacer"></span>
             <span class="fighter-name">${fighter.name}</span>
           </li>
