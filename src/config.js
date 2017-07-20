@@ -211,34 +211,34 @@ export default [
     angel: 'Mojito',
     fighters: [
       {
-        name: 'Bergamo'
+        name: 'Basil'
       },
       {
         name: 'Lavender'
       },
       {
-        name: 'Basil'
-      },
-      {
-        name: 'Hyssop'
-      },
-      {
-        name: 'Oregano'
-      },
-      {
-        name: 'Sorrel'
-      },
-      {
-        name: 'Chappil'
-      },
-      {
-        name: 'Comfrey'
+        name: 'Bergamo'
       },
       {
         name: 'Roselle'
       },
       {
+        name: 'Oregano'
+      },
+      {
+        name: 'Hyssop'
+      },
+      {
+        name: 'Chappil'
+      },
+      {
+        name: 'Sorrel'
+      },
+      {
         name: 'Hop'
+      },
+      {
+        name: 'Comfrey'
       }
     ]
   },
@@ -255,28 +255,28 @@ export default [
         name: 'Lilibeu'
       },
       {
+        name: '?'
+      },
+      {
+        name: '?'
+      },
+      {
+        name: '?'
+      },
+      {
         name: 'Napapa'
       },
       {
+        name: '?'
+      },
+      {
+        name: '?'
+      },
+      {
+        name: '?'
+      },
+      {
         name: 'Jium'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
       }
     ]
   },

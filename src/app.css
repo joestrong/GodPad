@@ -81,7 +81,9 @@ li.universe:hover {
 }
 ul.fighters {
     display: grid;
+    grid-auto-rows: auto;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     align-content: start;
     flex: 1;
     margin: 0;
@@ -92,7 +94,6 @@ li.fighter {
     position: relative;
     background: #fff none;
     border-radius: 50%;
-    margin: 10px;
     overflow: hidden;
     cursor: pointer;
     background-size: cover;
