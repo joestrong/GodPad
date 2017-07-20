@@ -65,6 +65,11 @@ page2El.addEventListener('click', e => {
   }
 })
 
+page2El.querySelector('.back-button').addEventListener('click', e => {
+  page2El.style.display = 'none'
+  page1El.style.display = 'flex'
+})
+
 function isFighterRemoved(universeIndex, fighterIndex) {
   if (universes[universeIndex].fighters[fighterIndex].removed === true) {
     return true

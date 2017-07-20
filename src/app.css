@@ -123,3 +123,9 @@ li.fighter .fighter-name {
 li.fighter:hover .fighter-name {
     opacity: 1;
 }
+
+.back-button {
+    cursor: pointer;
+    padding-bottom: 25px;
+    text-align:center
+}
