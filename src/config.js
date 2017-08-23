@@ -136,28 +136,28 @@ export default [
         name: 'Frost'
       },
       {
-        name: 'Botamo'
+        name: 'Magetta'
       },
       {
-        name: 'Magetta'
+        name: 'Botamo'
       },
       {
         name: 'Cabba'
       },
       {
-        name: 'Caulifla'
+        name: 'Saonel'
+      },
+      {
+        name: 'Pilina'
       },
       {
         name: 'Kale'
       },
       {
-        name: '?'
+        name: 'Caulifla'
       },
       {
-        name: '?'
-      },
-      {
-        name: '?'
+        name: 'Dr. Rota'
       }
     ]
   },
