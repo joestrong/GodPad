@@ -14,31 +14,31 @@ export default [
         name: 'Brianne de Chateau'
       },
       {
-        name: 'Kamikaze Fireball 2'
+        name: 'Sanka Ku'
       },
       {
-        name: 'Kamikaze Fireball 3'
+        name: 'Su Roas'
       },
       {
-        name: '? (Yardrat)'
+        name: 'Zarbuto'
       },
       {
         name: 'Rabanra'
       },
       {
-        name: '?'
+        name: 'Jimeze'
       },
       {
-        name: '?'
+        name: 'Vikal'
       },
       {
-        name: '?'
+        name: 'Zirloin'
       },
       {
-        name: '?'
+        name: 'Prum'
       },
       {
-        name: '?'
+        name: 'Harmira'
       }
     ]
   },
@@ -49,34 +49,34 @@ export default [
     angel: 'Campari',
     fighters: [
       {
-        name: 'Nigrisshi'
+        name: 'The Preecho'
       },
       {
         name: 'Narirama'
       },
       {
-        name: '?'
+        name: 'Maji=Kayo'
       },
       {
-        name: '?'
+        name: 'Catopesra'
       },
       {
-        name: '?'
+        name: 'Borareta'
       },
       {
-        name: '?'
+        name: 'Koitsukai'
       },
       {
-        name: '?'
+        name: 'Paparoni'
       },
       {
-        name: '?'
+        name: 'Biarra'
       },
       {
-        name: '?'
+        name: 'Pancea'
       },
       {
-        name: '?'
+        name: 'Nigrisshi'
       }
     ]
   },
@@ -87,34 +87,34 @@ export default [
     angel: 'Cognac',
     fighters: [
       {
-        name: 'Damon'
+        name: 'Damom'
       },
       {
         name: 'Ganos'
       },
       {
+        name: 'Caway'
+      },
+      {
+        name: 'Dercori'
+      },
+      {
+        name: 'Shosa'
+      },
+      {
+        name: 'Monna'
+      },
+      {
         name: 'Nink'
       },
       {
-        name: 'Shoisha'
+        name: 'Majora'
       },
       {
-        name: '?'
+        name: 'Gamisaras'
       },
       {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: ''
-      },
-      {
-        name: ''
+        name: 'Shantsa'
       }
     ]
   },
@@ -171,28 +171,28 @@ export default [
         name: 'Goku'
       },
       {
-        name: 'Gohan'
+        name: 'Vegeta'
       },
       {
-        name: 'Vegeta'
+        name: 'Gohan'
       },
       {
         name: 'Piccolo'
       },
       {
-        name: 'Roshi'
+        name: 'Tien'
       },
       {
-        name: 'Tien'
+        name: 'Roshi'
       },
       {
         name: 'Krillin'
       },
       {
-        name: 'Android 17'
+        name: 'Android 18'
       },
       {
-        name: 'Android 18'
+        name: 'Android 17'
       },
       {
         name: 'Freiza'
@@ -255,25 +255,25 @@ export default [
         name: 'Lilibeu'
       },
       {
-        name: '?'
+        name: 'Jirasen'
       },
       {
-        name: '?'
+        name: 'Murisam'
       },
       {
-        name: '?'
+        name: 'Methiop'
       },
       {
         name: 'Napapa'
       },
       {
-        name: '?'
+        name: 'Rubalt'
       },
       {
-        name: '?'
+        name: 'Jilcol'
       },
       {
-        name: '?'
+        name: 'Obuni'
       },
       {
         name: 'Jium'
@@ -287,34 +287,34 @@ export default [
     angel: 'Marcarita',
     fighters: [
       {
-        name: 'Toppo'
+        name: 'Jiren'
       },
       {
-        name: 'Jiren'
+        name: 'Toppo'
       },
       {
         name: 'Dyspo'
       },
       {
-        name: 'Kahseral'
+        name: 'Vuon'
+      },
+      {
+        name: 'Kunshi'
+      },
+      {
+        name: 'Tupper'
+      },
+      {
+        name: 'Zoiray'
       },
       {
         name: 'Cocotte'
       },
       {
-        name: '?'
+        name: 'Kettol'
       },
       {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
-      },
-      {
-        name: '?'
+        name: 'Kahseral'
       }
     ]
   },
