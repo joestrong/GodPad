@@ -93,10 +93,31 @@ li.fighter {
     display: block;
     position: relative;
     background: #fff none;
-    border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    padding: 1vmin;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+li.fighter .colour-border {
+    padding: 1vmin;
+    background: #aaa;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+[data-universe="2"] li.fighter .colour-border { background: #aaa }
+[data-universe="3"] li.fighter .colour-border { background: #aaa }
+[data-universe="4"] li.fighter .colour-border { background: #aaa }
+[data-universe="6"] li.fighter .colour-border { background: #aaa }
+[data-universe="7"] li.fighter .colour-border { background: #ff0 }
+[data-universe="9"] li.fighter .colour-border { background: #aaa }
+[data-universe="10"] li.fighter .colour-border { background: #aaa }
+[data-universe="11"] li.fighter .colour-border { background: #f00 }
+li.fighter .fighter-image {
+    background-color: #000;
     background-size: cover;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 li.fighter .spacer {
     display: block;

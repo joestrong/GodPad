@@ -36,13 +36,18 @@ page1El.addEventListener('click', e => {
 function initSingle(universeIndex) {
   theUniverseIndex = universeIndex
   const universe = universes[universeIndex]
+  page2El.setAttribute('data-universe', universeIndex + 1)
   fightersEl.innerHTML = ''
   for (const [index, fighter] of universe.fighters.entries()) {
     const removed = isFighterRemoved(universeIndex, index) ? 'removed' : ''
     const fighterEl = domify(`
-          <li class="fighter ${removed}" data-fighter="${index}" title="${fighter.name}" style="background-image: url('/images/fighters/${universeIndex+1}-${index+1}.jpg')">
-            <span class="spacer"></span>
-            <span class="fighter-name">${fighter.name}</span>
+          <li class="fighter ${removed}" data-fighter="${index}" title="${fighter.name}">
+            <div class="colour-border">
+              <div class="fighter-image" style="background-image: url('/images/fighters/${universeIndex+1}-${index+1}.jpg')">
+                <span class="spacer"></span>
+                <span class="fighter-name">${fighter.name}</span>
+              </div>
+            </div>
           </li>
         `)
     fightersEl.appendChild(fighterEl)
