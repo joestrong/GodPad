@@ -14,6 +14,9 @@ let theUniverseIndex = 0
 
 for (const [index, universe] of universes.entries()) {
   const universeEl = domify(`<li class="universe" data-universe="${index}" title="${universe.name}">${index+1}</li>`)
+  if (universe.participating === false) {
+    universeEl.classList.add('disabled')
+  }
   const rotation = (360 / universes.length * index) - 90
   universeEl.style.transform = `
     translate(-7.5vmin, -7.5vmin)

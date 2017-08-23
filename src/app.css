@@ -54,11 +54,21 @@ li.universe:hover {
     background: #888;
     color: #fff;
 }
+li.universe.disabled {
+    cursor: default;
+    background: #888;
+    color: #fff;
+}
 
 .page.single {
     display: none;
     /*background: url('/images/background-2.jpg') no-repeat center center;*/
     background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+    .page.single {
+        flex-direction: column;
+    }
 }
 .universe-meta {
     width: 20vmin;
@@ -89,6 +99,11 @@ ul.fighters {
     margin: 0;
     padding: 10% 20% 0 10%;
 }
+@media screen and (max-width: 640px) {
+    ul.fighters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 li.fighter {
     display: block;
     background: #fff none;
@@ -114,7 +129,7 @@ li.fighter .colour-border {
 [data-universe="11"] li.fighter .colour-border { background: #f00 }
 li.fighter .fighter-image {
     position: relative;
-    background-color: #aaa;
+    background-color: #4ad5c0;
     background-size: cover;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
