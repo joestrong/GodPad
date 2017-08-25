@@ -14,12 +14,13 @@
   "scripts": {
     "build": "yarn build:js && yarn build:css && yarn build:precache && yarn notify",
     "build:js": "webpack --devtool sourcemaps src/app.js ./app.min.js",
-    "build:css": "cleancss src/app.css -o ./app.min.css",
+    "build:css": "node-sass src/app.scss | cleancss -o ./app.min.css",
     "build:precache": "sw-precache --config=./sw-precache-config.js --verbose",
     "watch": "watch 'yarn build' src",
     "notify": "notify -t 'Built' -m 'Built CSS/JS'"
   },
   "dependencies": {
-    "domify": "^1.4.0"
+    "domify": "^1.4.0",
+    "node-sass": "^4.5.3"
   }
 }

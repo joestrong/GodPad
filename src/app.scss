@@ -1,3 +1,21 @@
+$u1color: #000;
+$u12color: $u1color;
+
+$u2color: #e0a1b4;
+$u11color: $u2color;
+
+$u3color: #d0efb0;
+$u10color: $u3color;
+
+$u4color: #e3e19a;
+$u9color: $u4color;
+
+$u5color: #000;
+$u8color: $u5color;
+
+$u6color: #75b6d7;
+$u7color: $u6color;
+
 html {
     height: 100%;
 }
@@ -52,12 +70,26 @@ li.universe {
 }
 li.universe:hover {
     background: #888;
-    color: #fff;
 }
+li.universe[data-universe="0"] { background: $u1color; &:hover{ background: lighten($u1color, 10%) } }
+li.universe[data-universe="1"] { background: $u2color; &:hover{ background: lighten($u2color, 10%) } }
+li.universe[data-universe="2"] { background: $u3color; &:hover{ background: lighten($u3color, 10%) } }
+li.universe[data-universe="3"] { background: $u4color; &:hover{ background: lighten($u4color, 10%) } }
+li.universe[data-universe="4"] { background: $u5color; &:hover{ background: lighten($u5color, 10%) } }
+li.universe[data-universe="5"] { background: $u6color; &:hover{ background: lighten($u6color, 10%) } }
+li.universe[data-universe="6"] { background: $u7color; &:hover{ background: lighten($u7color, 10%) } }
+li.universe[data-universe="7"] { background: $u8color; &:hover{ background: lighten($u8color, 10%) } }
+li.universe[data-universe="8"] { background: $u9color; &:hover{ background: lighten($u9color, 10%) } }
+li.universe[data-universe="9"] { background: $u10color; &:hover{ background: lighten($u10color, 10%) } }
+li.universe[data-universe="10"] { background: $u11color; &:hover{ background: lighten($u11color, 10%) } }
+li.universe[data-universe="11"] { background: $u12color; &:hover{ background: lighten($u12color, 10%) } }
 li.universe.disabled {
     cursor: default;
     background: #888;
-    color: #fff;
+    color: #666;
+    &:hover{
+        background: #888;
+    }
 }
 
 .page.single {
@@ -86,6 +118,18 @@ li.universe.disabled {
     color: #2e878f;
     font-size: 5vmin;
 }
+[data-universe="1"] .universe-icon { background: $u1color }
+[data-universe="2"] .universe-icon { background: $u2color }
+[data-universe="3"] .universe-icon { background: $u3color }
+[data-universe="4"] .universe-icon { background: $u4color }
+[data-universe="5"] .universe-icon { background: $u5color }
+[data-universe="6"] .universe-icon { background: $u6color }
+[data-universe="7"] .universe-icon { background: $u7color }
+[data-universe="8"] .universe-icon { background: $u8color }
+[data-universe="9"] .universe-icon { background: $u9color }
+[data-universe="10"] .universe-icon { background: $u10color }
+[data-universe="11"] .universe-icon { background: $u11color }
+[data-universe="12"] .universe-icon { background: $u12color }
 .universe-name {
     text-align: center;
 }
@@ -112,6 +156,7 @@ li.fighter {
     padding: 1vmin;
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    filter: drop-shadow(5px 5px 3px #fff);
 }
 li.fighter .colour-border {
     padding: 1vmin;
@@ -119,14 +164,18 @@ li.fighter .colour-border {
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-[data-universe="2"] li.fighter .colour-border { background: #000 }
-[data-universe="3"] li.fighter .colour-border { background: #000 }
-[data-universe="4"] li.fighter .colour-border { background: #000 }
-[data-universe="6"] li.fighter .colour-border { background: #85bed7 }
-[data-universe="7"] li.fighter .colour-border { background: #ff0 }
-[data-universe="9"] li.fighter .colour-border { background: #000 }
-[data-universe="10"] li.fighter .colour-border { background: #b2eeae }
-[data-universe="11"] li.fighter .colour-border { background: #f00 }
+[data-universe="1"] li.fighter .colour-border { background: $u1color }
+[data-universe="2"] li.fighter .colour-border { background: $u2color }
+[data-universe="3"] li.fighter .colour-border { background: $u3color }
+[data-universe="4"] li.fighter .colour-border { background: $u4color }
+[data-universe="5"] li.fighter .colour-border { background: $u5color }
+[data-universe="6"] li.fighter .colour-border { background: $u6color }
+[data-universe="7"] li.fighter .colour-border { background: $u7color }
+[data-universe="8"] li.fighter .colour-border { background: $u8color }
+[data-universe="9"] li.fighter .colour-border { background: $u9color }
+[data-universe="10"] li.fighter .colour-border { background: $u10color }
+[data-universe="11"] li.fighter .colour-border { background: $u11color }
+[data-universe="12"] li.fighter .colour-border { background: $u12color }
 li.fighter .fighter-image {
     position: relative;
     background-color: #4ad5c0;
